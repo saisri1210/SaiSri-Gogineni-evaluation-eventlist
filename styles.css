@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Traffic white */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+.add-event-btn {
+    background-color: #008cba; /* Blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    gap: 10px;
+}
+
+.add-event-btn:hover {
+    background-color: #0071a1; /* Darker blue */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f8f9fa; /* Light grey */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e6e2d3; /* Tan */
+}
+
+.edit-btn, .delete-btn, .save-btn, .cancel-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 5px;
+}
+
+.edit-btn svg, .save-btn svg {
+    fill: #008cba; /* Blue */
+}
+
+.edit-btn:hover svg, .save-btn:hover svg {
+    fill: #0071a1; /* Darker blue */
+}
+
+.delete-btn svg, .cancel-btn svg {
+    fill: #c94c4c; /* Vermillion red */
+}
+
+.delete-btn:hover svg, .cancel-btn:hover svg {
+    fill: #a73737; /* Darker red */
+}
+
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
